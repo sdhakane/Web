@@ -10,34 +10,41 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header  id="header">
-      <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
-    <div class="navbar-brand ">
-           <a href="index.html" ><h1>Food,LLC</h1></a>
+     <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">Food, LLC</p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      
-    <div class="container visible-xs">
-  <button id="btn" class="navbar-toggler navbar-toggler-right hidden-md hidden-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-
-  <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-    <ul class="nav navbar-nav mr-auto" id="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="#chicken">Chicken<span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#beef">Beef</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#sushi">Sushi</a>
-      </li>
-    </ul>
-</div>
-</div>
-</nav> <div class="container">
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#chicken-div"><p class="item">Chicken</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center beef-item">
+              <a href="#beef-div"><p class="item">Beef</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center sushi-item">
+              <a href="#sushi-div"><p class="item">Sushi</p></a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    </header>
+ <div class="container">
 
       <p class="text-center" id="MENU">Our Menu</p>
 
@@ -101,7 +108,7 @@
 
       </div>
     </div>
-</header>
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
